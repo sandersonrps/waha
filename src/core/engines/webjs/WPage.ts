@@ -1,7 +1,7 @@
 import { sleep } from '@waha/utils/promiseTimeout';
 import { EventEmitter } from 'events';
 import { Key } from 'node-cache';
-import { Page } from 'puppeteer';
+
 
 export interface CallErrorEvent {
   method: string | symbol;
@@ -25,7 +25,7 @@ export const PAGE_CALL_ERROR_EVENT = 'page.call.error';
  *
  */
 export class WPage extends EventEmitter {
-  constructor(private page: Page) {
+  constructor(private page: any) {
     super();
   }
 

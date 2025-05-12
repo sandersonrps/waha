@@ -111,7 +111,6 @@ import { PaginatorInMemory } from '@waha/utils/Paginator';
 import { sleep, waitUntil } from '@waha/utils/promiseTimeout';
 import { SingleDelayedJobRunner } from '@waha/utils/SingleDelayedJobRunner';
 import * as lodash from 'lodash';
-import { ProtocolError } from 'puppeteer';
 import { filter, fromEvent, merge, mergeMap, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import {

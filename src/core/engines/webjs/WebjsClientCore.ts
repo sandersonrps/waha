@@ -4,7 +4,6 @@ import { PaginationParams } from '@waha/structures/pagination.dto';
 import { TextStatus } from '@waha/structures/status.dto';
 import { EventEmitter } from 'events';
 import * as lodash from 'lodash';
-import { Page } from 'puppeteer';
 import { Client, Events } from 'whatsapp-web.js';
 import { Message } from 'whatsapp-web.js/src/structures';
 import { exposeFunctionIfAbsent } from 'whatsapp-web.js/src/util/Puppeter';
@@ -43,7 +42,7 @@ export class WebjsClientCore extends Client {
       this.wpage.on(PAGE_CALL_ERROR_EVENT as any, (event: CallErrorEvent) => {
         this.events.emit(PAGE_CALL_ERROR_EVENT as any, event);
       });
-      this.pupPage = this.wpage as any as Page;
+      this.pupPage = this.wpage as any;
     }
     return result;
   }
