@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  waha:
+    container_name: waha
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3003:3003"
+    environment:
+      - PORT=3003
+      - SESSION_DIR=./sessions
+      - TZ=America/Sao_Paulo
+      - LANG=pt_BR.UTF-8
+    restart: unless-stopped
