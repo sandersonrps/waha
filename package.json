@@ -26,6 +26,7 @@
     "gows:proto": "yarn gows:proto:fetch && yarn gows:proto:build"
   },
   "dependencies": {
+    "sharp": "^0.32.6",
     "@adiwajshing/baileys": "github:devlikeapro/Baileys#fork-master-2025-05-01",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@aws-sdk/client-s3": "^3.633.0",
@@ -84,7 +85,6 @@
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.8.1",
-    "sharp": "^0.33.4",
     "swagger-ui-express": "^4.1.4",
     "ulid": "^2.3.0",
     "whatsapp-web.js": "github:devlikeapro/whatsapp-web.js#fork-main-channels",
