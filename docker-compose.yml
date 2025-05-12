@@ -1,11 +1,10 @@
 services:
   waha:
-    container_name: waha
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3003:3003"
+      - "3003"  # usa a porta interna, deixa o EasyPanel mapear externamente
     environment:
       - PORT=3003
       - SESSION_DIR=./sessions
