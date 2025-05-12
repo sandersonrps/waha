@@ -26,7 +26,6 @@
     "gows:proto": "yarn gows:proto:fetch && yarn gows:proto:build"
   },
   "dependencies": {
-    "sharp": "^0.32.6",
     "@adiwajshing/baileys": "github:devlikeapro/Baileys#fork-master-2025-05-01",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@aws-sdk/client-s3": "^3.633.0",
@@ -79,12 +78,12 @@
     "pino-pretty": "^11.2.1",
     "pretty-bytes": "5.6.0",
     "promise-retry": "^2.0.1",
-    "puppeteer": "^23.6.0",
     "qrcode": "^1.5.1",
     "qrcode-terminal": "^0.12.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.8.1",
+    "sharp": "^0.32.6",
     "swagger-ui-express": "^4.1.4",
     "ulid": "^2.3.0",
     "whatsapp-web.js": "github:devlikeapro/whatsapp-web.js#fork-main-channels",
@@ -96,7 +95,6 @@
   "resolutions": {
     "bufferutil": "^4.0.8",
     "ws": "^8.18.0",
-    "puppeteer": "^24.7.2",
     "whatwg-url": "13.0.0",
     "libsignal": "github:devlikeapro/libsignal-node#fork-master"
   },
