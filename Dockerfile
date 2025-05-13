@@ -7,7 +7,6 @@ COPY . .
 RUN npm install --legacy-peer-deps
 RUN npm run build
 
-ENV PORT=3003
-EXPOSE 3003
+EXPOSE 3000
 
-CMD ["node", "dist/main.js"]
+CMD ["npm", "run", "start:prod"]
