@@ -1,8 +1,7 @@
 services:
   waha:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: devlikeapro/waha-plus:chrome
+    container_name: waha
     ports:
       - "3000:3000"
     environment:
