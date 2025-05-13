@@ -273,7 +273,7 @@ export class WhatsappSessionWebJSCore extends WhatsappSession {
         this.whatsapp.events.on(
           PAGE_CALL_ERROR_EVENT,
           (event: CallErrorEvent) => {
-            if (event.error instanceof ProtocolError) {
+            if (event.error) {
               this.logger.error(
                 `ProtocolError when calling page method: ${String(
                   event.method,
